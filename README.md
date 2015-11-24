@@ -1,6 +1,7 @@
+# PixelShank
+
 <img src="https://github.com/witmin/PixelShank/blob/master/img/icon.png?raw=true" alt="PixelShank Icon" width="128" />
 
-# PixelShank
 Add pixel size mark on image and save as .png. Build with [p5.js](http://p5js.org/), [electron](http://electron.atom.io/) and [canvas](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API).
 
 <img src="https://github.com/witmin/PixelShank/blob/master/design_source/screenshots/PixelShank.png?raw=true" alt="PixelShank Screenshot"/>
