@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PixelShank</title>
+    <link rel="stylesheet" href="css/base.css">
+    <script src="js/p5.js"></script>
+    <script src="js/addons/p5.dom.js"></script>
+    <script src="js/sketch.js"></script>
+</head>
+<body>
+<div class="hide" id="toolbar">
+    <input type="file" id="image-loader-button" onchange="loadSystemImage('image-loader-button');">
+    <button id="undo-button" type="button" onclick="undo()">Undo</button>
+    <a class="button" href="#" id="save-button" download="pixelshank.png" onclick="saveImage()">Save as</a>
+</div>
+
+<!-- Init Image that supports loading an image-->
+<input type="file" id="init-image-loader-button" onchange="loadSystemImage('init-image-loader-button');">
+
+</body>
+</html>

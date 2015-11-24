@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.4rem; }
+
+/* =14px */
+h1 {
+  font-size: 2.4rem; }
+
+/* =24px */
+body {
+  background: #373737;
+  position: relative;
+  font-family: Verdana, Arial, "Lucida Bright", sans-serif; }
+
+canvas {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+a, a:hover, a:active {
+  margin: 0;
+  padding: 0;
+  text-decoration: none; }
+
+.hide {
+  display: none !important; }
+
+#toolbar {
+  position: fixed;
+  top: 4px;
+  left: 40px;
+  height: 36px;
+  width: 100%;
+  overflow: hidden; }
+  #toolbar button, #toolbar input, #toolbar .button {
+    display: inline-block;
+    width: auto;
+    font-size: 14px;
+    overflow: hidden;
+    height: auto;
+    padding: 4px 8px;
+    vertical-align: middle;
+    color: #73899d;
+    background: #393e48;
+    border: 0;
+    border-radius: 0;
+    outline: none;
+    white-space: nowrap;
+    transition: all .3s;
+    cursor: pointer; }
+    #toolbar button:hover, #toolbar input:hover, #toolbar .button:hover {
+      color: #88a2ba;
+      background: #2e323a; }
+  #toolbar #image-loader-button {
+    color: #393e48;
+    background: #393e48;
+    width: 100px;
+    padding: 1px 8px;
+    overflow: hidden; }
+    #toolbar #image-loader-button::-webkit-file-upload-button {
+      visibility: hidden; }
+    #toolbar #image-loader-button:hover {
+      color: #393e48;
+      background: #393e48;
+      box-shadow: 0 1px 1px #404040; }
+    #toolbar #image-loader-button:before {
+      content: 'Import an Image';
+      color: #73899d;
+      display: inline-block;
+      -webkit-user-select: none;
+      cursor: pointer; }
+      #toolbar #image-loader-button:before:hover {
+        color: #88a2ba;
+        background: #2e323a; }
+
+#init-image-loader-button {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #4b5966;
+  background: #4b5966;
+  z-index: 999998;
+  cursor: pointer;
+  outline: none; }
+  #init-image-loader-button::-webkit-file-upload-button {
+    visibility: hidden; }
+  #init-image-loader-button:hover {
+    color: #404c57;
+    background: #404c57;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); }
+  #init-image-loader-button:before {
+    position: relative;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    display: inline-block;
+    content: 'Open an image';
+    width: 70%;
+    min-width: 400px;
+    height: auto;
+    padding: 20px 5%;
+    margin: 0;
+    color: #73899d;
+    background: #4b5966;
+    text-align: center;
+    font-size: 28px;
+    text-transform: Capitalize;
+    z-index: 999999;
+    transiton: all .3s; }
+    #init-image-loader-button:before:hover {
+      color: #88a2ba;
+      background: #2e323a;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); }
+
+/*# sourceMappingURL=base.css.map */
