@@ -19,7 +19,7 @@
     "ruler"
   ],
   "author": "Millie Lin",
-  "license": "ISC",
+  "license": "MIT",
   "homepage": "https://bitbucket.org/witmin/designmeasuringtool#readme",
   "devDependencies": {
     "electron": "^0.4.1",
