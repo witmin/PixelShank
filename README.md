@@ -1,5 +1,5 @@
 # PixelShank
-Add pixel size mark on image and save as .png. Driven by p5.js, electron and html canvas.
+Add pixel size mark on image and save as .png. Build with [p5.js](http://p5js.org/), [electron](http://electron.atom.io/) and [canvas](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API).
 
 
 <img src="https://github.com/witmin/PixelShank/blob/master/img/icon.png?raw=true" alt="PixelShank Icon" width="128" />
@@ -37,6 +37,8 @@ electron-packager ./ PixelShank --platform=darwin --arch=x64 --version=0.35.0 --
 Please refer to the npm page of [electron-packager](https://www.npmjs.com/package/electron-packager).
 
 
-## Work in modern browser
+### Work in modern browser
 It needs you to run a local server to make it work in the browser on local machine. I would suggest [http-server](https://www.npmjs.com/package/http-server) if you want to test it locally. 
 You can also upload the index.html, js and css folder to your online server to make it work.
+
+Build with love with Webstorm.
