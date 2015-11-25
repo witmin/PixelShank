@@ -43,5 +43,6 @@ Please refer to the npm page of [electron-packager](https://www.npmjs.com/packag
 It needs you to run a local server to make it work in the browser on local machine. I would suggest [http-server](https://www.npmjs.com/package/http-server) if you want to test it locally. 
 You can also upload the index.html, js and css folder to your online server to make it work.
 
-Build with IDE: [WebStorm](https://www.jetbrains.com/webstorm/)
+Build with IDE: [WebStorm](https://www.jetbrains.com/webstorm/).
+
 Design and Developed with ♥ love by [MillieLin](http://www.millielin.com).
