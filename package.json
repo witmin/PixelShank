@@ -1,12 +1,12 @@
 {
   "name": "pixelshank",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An app that support you measure the object length on an image and export it as png.",
   "main": "./main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "build": "electron-packager ./ PixelShank --platform=win32 --arch=x64 --version=0.35.0 --icon=./img/icon.ico --ignore=design_source --asar --overwrite"
+    "build": "electron-packager ./ PixelShank --platform=win32 --arch=x64 --version=0.35.0 --icon=./img/icon.ico --ignore=design_source  --ignore=node_modules/electron-prebuilt --ignore=node_modules/electron-packager --ignore=.idea --ignore=css/base.scss --asar --overwrite"
   },
   "repository": {
     "type": "git",
@@ -16,14 +16,16 @@
     "design",
     "tool",
     "pixel",
-    "ruler"
+    "measure",
+    "mark",
+    "png"
   ],
   "author": "Millie Lin",
   "license": "MIT",
-  "homepage": "https://bitbucket.org/witmin/designmeasuringtool#readme",
+  "homepage": "github.com/witmin/PixelShank",
   "devDependencies": {
-    "electron": "^0.4.1",
     "electron-packager": "^5.1.1",
-    "electron-prebuilt": "^0.35.0"
+    "electron-prebuilt": "^0.35.0",
+    "p5": "^0.4.19"
   }
 }
