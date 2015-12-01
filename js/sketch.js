@@ -14,13 +14,11 @@ var sY = null;
 var eX = null;
 var eY = null;
 
-
 // Load image
 var img = new Image();
 var imgLoaded = false;
 // Clicked detection. If it is odd, !finished, if the time is even, finished drawing a line;
 var finished = true;
-
 
 function loadSystemImage(btnId) {
     var tempImg = new Image()
@@ -28,6 +26,11 @@ function loadSystemImage(btnId) {
         , url = window.URL || window.webkitURL
         , src = url.createObjectURL(f);
     tempImg.src = src;
+    tempImg.onload = function () {
+        canvas.width = tempImg.width;
+        canvas.height = tempImg.height;
+        resizeCanvas(canvas.width, canvas.height);
+    };
     img = loadImage(tempImg.src);
     img.width = tempImg.width;
     img.height = tempImg.height;
@@ -36,14 +39,12 @@ function loadSystemImage(btnId) {
     var toolbar = document.getElementById("toolbar");
     initBtn.className = initBtn.className + ' hide';
     toolbar.className = "";
-    console.log(img + "\n Done Resize");
 }
 
 function preload() {
     img = loadImage("img/init.png");
     canvasWidth = img.width;
     canvasHeight = img.height;
-    resizeCanvas(img.width, img.height);
 }
 
 function saveImage() {
@@ -54,13 +55,10 @@ function saveImage() {
 
 function setup() {
 // Initialize the canvas
-//load image
-    image(img, 0, 0);
-    canvas = createCanvas(img.width, img.height);
+    canvas = createCanvas(10, 10);
     canvas.position(canvasPosX, canvasPosY);
-    resizeCanvas(img.width, img.height);
     canvas.class = 'main-canvas';
-    background(55);
+    background(55, 55, 55, 0);
 }
 
 function windowResized() {
@@ -70,7 +68,6 @@ function windowResized() {
 function draw() {
     background(55);
     image(img, 0, 0);
-
     var templine = new Line(sX, sY, eX, eY);
 
     // Preview the temp lien
