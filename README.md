@@ -6,8 +6,15 @@ Add pixel size mark on image and save as .png. Build with [p5.js](http://p5js.or
 
 <img src="https://github.com/witmin/PixelShank/blob/master/design_source/screenshots/PixelShank.png?raw=true" alt="PixelShank Screenshot"/>
 
-### Work as desktop app
+### Download PixelShank Desktop Apps 
 PixelShank is integrated with electron, aftere simple setup, you can build the cross-platform desktop app on Windows, MacOS or Linux.
+
+Windows app version is ready on sourceforge: 
+[https://sourceforge.net/projects/pixelshank/](https://sourceforge.net/projects/pixelshank/)
+
+It is a zipped file. Download, unpack it and click "pixelshank.exe" to start.
+
+MacOS app is coming soon.
 
 #### Install
 1. Check out the repository to your local machine as a new project
