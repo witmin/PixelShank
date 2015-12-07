@@ -12,7 +12,9 @@
 <body>
 <div class="hide" id="toolbar">
     <input type="file" id="image-loader-button" onchange="loadSystemImage('image-loader-button');">
+    <button id="clear-button" type="button" onclick="clearLines()">Clear</button>
     <button id="undo-button" type="button" onclick="undo()">Undo</button>
+
     <a class="button" href="#" id="save-button" download="pixelshank.png" onclick="saveImage()">Save as</a>
 </div>
 

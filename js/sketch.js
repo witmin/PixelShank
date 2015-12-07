@@ -39,6 +39,8 @@ function loadSystemImage(btnId) {
     var toolbar = document.getElementById("toolbar");
     initBtn.className = initBtn.className + ' hide';
     toolbar.className = "";
+    // After import a new image. Erase the previous marked lines.
+    lines = [];
 }
 
 function preload() {
@@ -102,6 +104,13 @@ function mouseClicked() {
 function undo() {
     if (lines !== null) {
         lines.splice(-1, 1);
+    }
+}
+// Clear marked lines on the canvas
+function clearLines(){
+    if (lines !== null) {
+        lines.splice(0, lines.length);
+        console.log("cleared lines");
     }
 }
 
