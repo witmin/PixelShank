@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "build": "electron-packager ./ PixelShank --platform=darwin --arch=x64 --electron-version=4.1.4 --icon=./img/icon.ico --ignore=design_source  --ignore=node_modules/electron-prebuilt --ignore=node_modules/electron-packager --ignore=.idea --ignore=css/base.scss --asar --overwrite"
+    "build": "electron-packager ./ PixelShank --platform=darwin --arch=x64 --app-version=4.1.4 --icon=./img/icon.ico --ignore=design_source  --ignore=node_modules/electron-prebuilt --ignore=node_modules/electron-packager --ignore=.idea --ignore=css/base.scss --asar --overwrite"
   },
   "repository": {
     "type": "git",
