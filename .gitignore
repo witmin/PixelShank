@@ -1,1 +1,3 @@
-.idea
+/.idea
+/node_modules
+/PixelShank-darwin-x64

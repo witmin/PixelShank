@@ -24,9 +24,9 @@
   "license": "MIT",
   "homepage": "http://github.com/witmin/PixelShank",
   "devDependencies": {
-    "electron": "^4.1.4",
-    "electron-packager": "^13.1.1",
+    "electron": "^8.3.0",
+    "electron-packager": "^14.2.1",
     "electron-prebuilt": "^1.4.13",
-    "p5": "^0.7.3"
+    "p5": "^1.0.0"
   }
 }
