@@ -1,3 +1,5 @@
 /.idea
 /node_modules
 /PixelShank-darwin-x64
+
+.package-lock.json
